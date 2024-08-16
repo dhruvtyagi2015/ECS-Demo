@@ -10,7 +10,7 @@ metadata:
 spec:
   className: best-effort-xsmall
   #http or https location of OVA without the prefix:
-  imageName: https://bitnami.com/redirect/to/2479058/bitnami-wordpress-6.6.1-r7-debian-12-amd64.ova
+  imageName: bitnami.com/redirect/to/2479058/bitnami-wordpress-6.6.1-r7-debian-12-amd64.ova
   powerState: poweredOn
   networkInterfaces:
   - networkName: "VM Network"
