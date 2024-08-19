@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: docker.io/alanrenouf/sampleveco:1.0
+        image: alanrenouf/docker-nginx-hello-keswick
         ports:
         - containerPort: 80
       imagePullSecrets:
