@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: cuda-vector-add
+  namespace: default
 spec:
   restartPolicy: OnFailure
   containers:
     - name: cuda-vector-add
       image: "gcr.io/spectro-images-public/gpu/nvidia/ubuntu-nvidia-add:ubuntu"
-      namespace: default
       # specify gpu request 
       resources:
         limits:
