@@ -6,7 +6,7 @@ spec:
   restartPolicy: OnFailure
   containers:
     - name: cuda-vector-add
-      image: "gcr.io/spectro-images-public/gpu/nvidia/ubuntu-nvidia-add:ubuntu
+      image: "gcr.io/spectro-images-public/gpu/nvidia/ubuntu-nvidia-add:ubuntu"
       # specify gpu request 
       resources:
         limits:
