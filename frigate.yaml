@@ -59,9 +59,11 @@ spec:
         volumeMounts:
         - name: writable-config
           mountPath: /config
+      imagePullSecrets:
+        - name: dhruv-docker-secret
       initContainers:
       - name: init-config
-        image: busybox
+        image: ghcr.io/dhruvtyagi2015/busybox
         command: ['sh', '-c', 'cp /config-data/config.yaml /config/config.yaml']
         volumeMounts:
         - name: config
