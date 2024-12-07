@@ -22,9 +22,11 @@ spec:
     spec:
       containers:
       - name: nginx-helloworld
-        image: alanrenouf/docker-nginx-hello-keswick
+        image: ghcr.io/dhruvtyagi2015/docker-nginx-hello-keswick:latest
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: ghcr-creds
 ---
 apiVersion: v1
 kind: Service
