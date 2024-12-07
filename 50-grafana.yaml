@@ -64,8 +64,8 @@ spec:
               name: grafana-pv
             - name: grafana-config-volume
               mountPath: /etc/grafana/
-        imagePullSecrets:
-        - name: ghcr-creds
+      imagePullSecrets:
+      - name: ghcr-creds
       volumes:
         - name: grafana-pv
           persistentVolumeClaim:
